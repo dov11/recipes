@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react'
 import PropTypes from 'prop-types'
 import Pescatarian from '../images/pescatarian.svg'
-
+import LikeButton from '../components/LikeButton'
 
 class RecipeItem extends PureComponent {
   static propTypes = {
@@ -24,6 +24,7 @@ class RecipeItem extends PureComponent {
             { !vegan && vegetarian && <li><span role="img" aria-label="vegatarian">🥕</span></li> }
             { pescatarian && <li><img src={Pescatarian} alt="pescatarian"  /></li> }
           </ul>
+          <LikeButton />
         </div>
       </article>
     )
