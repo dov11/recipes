@@ -15,7 +15,7 @@ describe('<LikeButton />', () => {
   })
 
   it('has an initial state for "liked", that is "false"', () => {
-    console.log(typeof(button["renderer"]));
+    console.log(typeof button);
     expect(button.state('liked')).to.eq(false)
   })
 
