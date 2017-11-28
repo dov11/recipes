@@ -10,11 +10,12 @@ describe('<LikeButton />', () => {
   const button = shallow(<LikeButton />)
 
   it('is wrapped in a paragraph with class "like"', () => {
-    expect(button).to.have.tagName('div')
+    expect(button).to.have.tagName('p')
     expect(button).to.have.className('like')
   })
 
   it('has an initial state for "liked", that is "false"', () => {
+    console.log(typeof(button["renderer"]));
     expect(button.state('liked')).to.eq(false)
   })
 
