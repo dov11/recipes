@@ -1,3 +1,6 @@
-// src/reducers/index.js
 
-export default {} // empty for now!
+import recipes from './recipes'
+
+export default {
+  recipes
+}
