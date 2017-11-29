@@ -24,7 +24,9 @@ class RecipeItem extends PureComponent {
             { !vegan && vegetarian && <li><span role="img" aria-label="vegatarian">🥕</span></li> }
             { pescatarian && <li><img src={Pescatarian} alt="pescatarian"  /></li> }
           </ul>
-          <LikeButton />
+          <LikeButton liked={ liked }
+            likes={likedBy.length}
+onChange={ this.toggleLike.bind(this)/>
         </div>
       </article>
     )
